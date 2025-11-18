@@ -24,12 +24,15 @@ function App() {
         </button>
       </header>
       <main className='relative min-h-screen px-4 sm:px-8 pt-20 sm:pt-28'>
-        <a href='/' className='mb-6 flex origin-left items-center font-medium text-base sm:text-2xl transform transition-transform ease-in-out hover:scale-110'><img src="/icon-map.svg" alt="Map" className='mr-2'/>Москва</a>
+        <a href='/' className='mb-6 flex origin-left items-center font-medium text-base sm:text-2xl transform transition-transform ease-in-out hover:scale-110'>
+          <img src={import.meta.env.BASE_URL + 'icon-map.svg'} alt="Map" className='mr-2'/>
+          Москва
+        </a>
 
         <h1 className='max-w-[98vw] text-2xl sm:text-4xl lg:text-6xl leading-[1.2] font-bold text-[#59E43A] mb-6 sm:mb-15 opacity-0 animate-[slideRight_0.8s_ease-out_forwards]'>Благотворительный <br/> марафон
         <span className='px-2 text-base sm:text-xl font-normal text-black block md:inline'>Дорога чемпиона</span>
         <span className='text-2xl sm:text-4xl font-black italic block md:inline'>2025</span>
-        <img src="/9461597.jpg" alt="img" className=' overflow-x-hidden block sm:absolute top-[-50px] lg:top-[-150px] left-[230px] lg:left-[435px] w-[800px] z-[-3]'/>
+        <img src={import.meta.env.BASE_URL + '9461597.jpg'} alt="img" className=' overflow-x-hidden block sm:absolute top-[-50px] lg:top-[-150px] left-[230px] lg:left-[435px] w-[800px] z-[-3]'/>
         </h1>
 
         <div className="container-buttons flex flex-col sm:flex-row gap-4 sm:gap-5 mb-8 sm:mb-25">
